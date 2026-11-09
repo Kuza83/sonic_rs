@@ -1,0 +1,10 @@
+[package]
+name = "md-env"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+md-core.workspace = true
+vdp.workspace = true
+thiserror.workspace = true

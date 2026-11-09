@@ -1,0 +1,13 @@
+# Compilation
+/target/
+/vendor/megadrive-rs/target/
+# Données dérivées de la ROM de Sega : jamais dans le dépôt
+*.assets
+*.assets.*
+/donnees/
+/sonic1
+*.md
+!README.md
+*.ppm
+# Notes de lecture du code de Sega
+/doc_temporaire/

@@ -1,0 +1,9 @@
+[package]
+name = "sonic1_rt"
+version = "0.1.0"
+edition = "2021"
+description = "Runtime du code 68000 recompilé : machine, sémantique des instructions, temps matériel sans CPU"
+
+[dependencies]
+md-core = { path = "../vendor/megadrive-rs/crates/md-core" }
+m68k = { path = "../vendor/megadrive-rs/crates/m68k" }

@@ -1,0 +1,11 @@
+[package]
+name = "sonic1_gen"
+version = "0.1.0"
+edition = "2021"
+description = "Code Rust généré par le recompilateur (sonic1_rs --recompile) : ne pas modifier à la main"
+
+[dependencies]
+sonic1_rt = { path = "../rt" }
+
+[profile.release]
+opt-level = 3

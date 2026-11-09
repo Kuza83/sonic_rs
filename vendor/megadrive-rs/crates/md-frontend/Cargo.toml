@@ -1,0 +1,25 @@
+[package]
+name = "md-frontend"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[features]
+# Window mode (SDL2). Needs the SDL2 development files (Debian/Ubuntu:
+# libsdl2-dev); without it, build with --no-default-features (headless only).
+default = ["sdl"]
+sdl = ["dep:sdl2"]
+
+[dependencies]
+md-core.workspace = true
+md-env.workspace = true
+anyhow.workspace = true
+thiserror.workspace = true
+clap.workspace = true
+vdp.workspace = true
+png.workspace = true
+zip.workspace = true
+sdl2 = { workspace = true, optional = true }
+
+[dev-dependencies]
+zip.workspace = true

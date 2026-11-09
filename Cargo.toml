@@ -1,0 +1,24 @@
+[package]
+name = "sonic1_rs"
+version = "0.1.0"
+edition = "2021"
+description = "Traduction Rust du pseudo-code Ghidra (via REA) de Sonic The Hedgehog (Mega Drive)"
+
+[dependencies]
+md-core = { path = "vendor/megadrive-rs/crates/md-core" }
+m68k = { path = "vendor/megadrive-rs/crates/m68k" }
+sdl2 = "0.37"
+anyhow = "1"
+sonic1_rt = { path = "rt" }
+sonic1_gen = { path = "gen" }
+png = "0.17"
+
+[profile.release]
+opt-level = 3
+
+[workspace]
+members = ["rt", "gen"]
+
+[profile.release.package.sonic1_gen]
+opt-level = 1
+codegen-units = 64

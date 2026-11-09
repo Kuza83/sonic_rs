@@ -1,0 +1,8 @@
+[package]
+name = "ym2612"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+savestate.workspace = true
