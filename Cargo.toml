@@ -18,6 +18,7 @@ opt-level = 3
 
 [workspace]
 members = ["rt", "gen"]
+exclude = ["vendor/megadrive-rs"]
 
 [profile.release.package.sonic1_gen]
 opt-level = 1
